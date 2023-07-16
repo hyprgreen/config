@@ -12,10 +12,11 @@
 #gsettings set org.gnome.desktop.interface font-name "ComicMono Nerd Font 13"
 
 # xdg dekstop portal repair on startup
-systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK &&\
-  dbus-update-activation-environment --systemd import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK &&\
-  killall xdg-desktop-portal &&\
-  systemctl --user restart piewire &
+
+#systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK &&\
+#  dbus-update-activation-environment --systemd import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK &&\
+#  killall xdg-desktop-portal &&\
+#  systemctl --user restart piewire &
 
 # waybar
 waybar &
